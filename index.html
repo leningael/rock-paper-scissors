@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Rock, Paper or Scissors</title>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <h1>Rock, Paper or Scissors</h1>
+        <div class="marcador">
+            <div id="cajaPersonal" class="cajaUsuario">YOU</div>
+            <div id="cajaCPU" class="cajaUsuario">CPU</div>
+            <span id="marcadorPersonal">0</span>:<span id="marcadorCPU">0</span>
+        </div>
+        <div class="contenedor-reiniciar">
+            <button id="btnReiniciar" class="btnReiniciar">Restart Score</button>
+        </div>
+        <div class="eleccion">
+            <h2>Select an option:</h2>
+            <div class="opciones">
+                <button id="opPiedra" class="opcion">
+                    <img src="img/Piedra.png" alt="Opcion piedra">
+                </button>
+                <button id="opPapel" class="opcion">
+                    <img src="img/Papel.png" alt="Opcion papel">
+                </button>
+                <button id="opTijera" class="opcion">
+                    <img src="img/Tijera.png" alt="Opcion tijera">
+                </button>
+            </div>
+        </div>
+        <!--Modal-->
+        <div id="contenedorModal" class="contenedorModal">
+            <div id="modal" class="modal modalCerrar">
+                <p id="btnCerrarModal" class="cerrar">X</p>
+                <div id="contenidoModal" class="contenidoModal">
+                    <div class="resultados">
+                        <div class="duelo">
+                            <div class="eleccionPersonal">
+                                <h2>You</h2>
+                                <img id="imgPersonal" src="img/Interrogacion.png" alt="Sin jugada">
+                            </div>
+                            <div class="versus">
+                                <h2>Vs</h2>
+                            </div>
+                            <div class="eleccionCPU">
+                                <h2>CPU</h2>
+                                <img id="imgCPU" class="imgCPU" src="img/Interrogacion.png" alt="Sin jugada">
+                            </div>
+                        </div>
+                        <div class="resultado">
+                            <h2 id="txtResultado">Result</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
