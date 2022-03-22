@@ -15,8 +15,8 @@ var imgCPU = document.getElementById("imgCPU");
 var txtResultado = document.getElementById("txtResultado");
 
 function desplegarModal(opPersonal, opCPU, resultado){
-    imgPersonal.src = `../img/${opPersonal}.png`;
-    imgCPU.src = `../img/${opCPU}.png`;
+    imgPersonal.src = `./img/${opPersonal}.png`;
+    imgCPU.src = `./img/${opCPU}.png`;
     imgCPU.classList.add('reflex');
     contenedorModal.style.opacity="1";
     contenedorModal.style.visibility="visible";
